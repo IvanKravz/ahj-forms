@@ -22,7 +22,7 @@ export default class Tooltip {
   createTooltip() {
     if (this.container === null) {
       throw new Error('container is not bind to DOM');
-    };
+    }
 
     this.element = document.createElement('div');
     this.element.className = 'element__tooltip tooltip display_none';

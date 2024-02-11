@@ -12,8 +12,8 @@ export default class Button {
 
   createButton() {
     if (this.container === null) {
-      throw new Error('container is not bind to DOM')
-  };
+      throw new Error('container is not bind to DOM');
+    }
     this.button = document.createElement('div');
     this.button.classList.add('button_popover');
     this.button.innerHTML = `<button class="button">${this.textContent}</button>`;
